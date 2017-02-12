@@ -1,0 +1,26 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "name": "item",
+      "type": "httpTrigger",
+      "direction": "in",
+      "methods": [
+        "put"
+      ]
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "type": "table",
+      "name": "outputTable",
+      "tableName": "items",
+      "connection": "StorageConnectionString",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
